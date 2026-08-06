@@ -1,0 +1,74 @@
+generated: '2026-08-06'
+method: searched
+source: https://www.98point6.com/platform/
+note: >-
+  98point6 Technologies publishes no machine-readable specification, so nothing
+  here is derived from a contract. Every entry below is a claim the company makes
+  in its own public marketing copy, recorded as a claim with its source URL, or a
+  verified absence. Conformance is UNVERIFIED in every case where conforms is
+  true — there is no public spec, conformance statement, certificate or test
+  report to check the claim against. This artifact deliberately does NOT carry a
+  Compliance pointer: no certification program (SOC 2, HITRUST, ISO 27001,
+  FedRAMP) is published on any public 98point6 page.
+standards:
+- id: hl7
+  conforms: claimed
+  evidence: >-
+    Platform page states EMR data integration uses "HL7 and FHIR" standards.
+  source: https://www.98point6.com/platform/
+  verified: false
+- id: fhir
+  conforms: claimed
+  evidence: >-
+    Platform page names FHIR among the integration standards used to pull EMR
+    data into the clinician console and write visit data back to the EMR. No
+    FHIR CapabilityStatement or ImplementationGuide is published publicly.
+  source: https://www.98point6.com/platform/
+  verified: false
+- id: smart-on-fhir
+  conforms: unknown
+  evidence: >-
+    Epic and Cerner integration is advertised but SMART on FHIR is never named,
+    and no launch/authorization detail is public.
+- id: sso
+  conforms: claimed
+  evidence: >-
+    Platform page states the patient application supports "SSO integration".
+    The protocol (SAML 2.0 / OIDC) is not named publicly.
+  source: https://www.98point6.com/platform/
+  verified: false
+- id: rfc9116-security-txt
+  conforms: true
+  evidence: >-
+    A valid RFC 9116 security.txt is served with Contact, Policy, Canonical,
+    Encryption, Acknowledgments, Preferred-Languages and Hiring fields.
+  source: https://www.98point6.com/.well-known/security.txt
+  verified: true
+- id: oauth2
+  conforms: false
+  evidence: >-
+    No /.well-known/oauth-authorization-server (404) and no public OAuth
+    documentation.
+- id: oidc
+  conforms: false
+  evidence: >-
+    No /.well-known/openid-configuration (404).
+- id: rfc9457-problem-details
+  conforms: unknown
+  evidence: No public specification or error reference to inspect.
+- id: rfc8615-api-catalog
+  conforms: false
+  evidence: /.well-known/api-catalog returns 404.
+- id: a2a
+  conforms: false
+  evidence: >-
+    Neither /.well-known/agent-card.json nor the legacy /.well-known/agent.json
+    is served on any resolving 98point6 host (both 404).
+certifications_published: []
+compliance_program_published: false
+compliance_note: >-
+  The privacy policy treats information supplied while seeking care as PHI and
+  states PHI is not used for advertising or marketing, which implies a HIPAA
+  posture, but no HIPAA attestation, BAA template, SOC 2 report, HITRUST
+  certification or trust center is published on any public page. trust.98point6.com
+  does not resolve; /security and /compliance return 404.

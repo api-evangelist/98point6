@@ -1,0 +1,40 @@
+generated: '2026-08-06'
+method: searched
+source: https://www.98point6.com/.well-known/security.txt
+host: https://www.98point6.com
+documents:
+- path: /.well-known/security.txt
+  status: 200
+  file: 98point6-security.txt
+  standard: RFC 9116
+- path: /.well-known/openid-configuration
+  status: 404
+- path: /.well-known/oauth-authorization-server
+  status: 404
+- path: /.well-known/api-catalog
+  status: 404
+- path: /.well-known/ai-plugin.json
+  status: 404
+- path: /.well-known/agent-card.json
+  status: 404
+- path: /.well-known/agent.json
+  status: 404
+notes: >-
+  98point6 Technologies publishes exactly one well-known document: an RFC 9116
+  security.txt on the marketing host. No OIDC/OAuth discovery, no API catalog,
+  and no A2A agent card at either the canonical or the legacy path. The
+  developer-facing subdomains developer/docs/api/status/trust .98point6.com do
+  not resolve in DNS, so there was no second host to probe.
+x-evidence:
+  fetched: '2026-08-06'
+  hosts_probed:
+  - www.98point6.com
+  - 98point6.com
+  - help.98point6.com
+  hosts_unresolved:
+  - developer.98point6.com
+  - docs.98point6.com
+  - api.98point6.com
+  - app.98point6.com
+  - status.98point6.com
+  - trust.98point6.com

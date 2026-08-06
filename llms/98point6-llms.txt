@@ -1,0 +1,55 @@
+# 98point6 Technologies
+
+> 98point6 Technologies is a Seattle-based digital health software company, founded in 2015,
+> that builds and licenses a cloud-based virtual care platform to health systems, payers and
+> virtual care providers. Since selling its own care-delivery division in 2023 it operates
+> purely as a licensed software provider. The platform pairs an AI-driven Automated Assistant
+> for patient intake and visit documentation with a web-based Clinician Console carrying
+> automated clinical decision support, plus a white-labeled patient application covering both
+> asynchronous and real-time (messaging, audio, video) care.
+
+## API surface
+
+98point6 Technologies publishes **no public API**. There is no developer portal, no API
+reference, no OpenAPI/AsyncAPI/GraphQL specification, no SDK download and no self-serve
+sign-up on any public 98point6 host. The subdomains `developer.98point6.com`,
+`docs.98point6.com`, `api.98point6.com` and `app.98point6.com` do not resolve in DNS, and the
+entire marketing site is fifteen pages.
+
+An integration surface does exist — the platform page advertises HL7 and FHIR based EMR
+integration with Epic and Cerner, SSO for patient login, and an SDK for building a fully
+branded patient experience — but it is delivered to licensees under a commercial agreement.
+The only public route to it is the demo-request form.
+
+- Platform overview: https://www.98point6.com/platform/
+- Request a demo (the access path): https://www.98point6.com/campaign/schedule-demo/
+- Contact: https://www.98point6.com/contact-98point6-technologies/
+
+## Docs
+
+- Knowledge Center (end-user help for clinician console, patient console and admin; not developer docs): https://help.98point6.com/
+- Blog / insights: https://www.98point6.com/blogs/
+- Newsroom: https://www.98point6.com/newsroom/
+- About: https://www.98point6.com/about-us/
+
+## Security and legal
+
+- Responsible disclosure policy: https://www.98point6.com/responsible-disclosure-policy/
+- security.txt (RFC 9116): https://www.98point6.com/.well-known/security.txt
+- Security contact: security@98point6.com
+- Legal and privacy (EULA, web privacy policy, legal notice): https://www.98point6.com/legal-and-privacy/
+- Accessibility statement: https://www.98point6.com/accessibility-statement/
+
+## API Evangelist artifacts
+
+- Profile: https://github.com/api-evangelist/98point6
+- Well-known index: well-known/98point6-well-known.yml
+- security.txt (verbatim): well-known/98point6-security.txt
+- Vulnerability disclosure: security/98point6-vulnerability-disclosure.yml
+- Domain security probe: security/98point6-domain-security.yml
+- Conformance (claims vs verified): conformance/98point6-conformance.yml
+
+---
+generated: 2026-08-06
+method: generated
+source: apis.yml + repo artifacts (no /llms.txt is published at www.98point6.com — 404)

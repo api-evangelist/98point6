@@ -1,7 +1,17 @@
 aid: 98point6
-name: 98point6
-description: '98point6 is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+name: 98point6 Technologies
+description: '98point6 Technologies is a Seattle-based digital health software company,
+  founded in 2015, that builds and licenses a cloud-based virtual care platform to
+  health systems, payers and virtual care providers. After selling its own care-delivery
+  division in 2023 it operates purely as a licensed software provider. The platform
+  combines an AI-driven Automated Assistant for patient intake and visit documentation,
+  a web-based Clinician Console with automated clinical decision support, and a white-labeled
+  patient application, covering both asynchronous and real-time (messaging, audio,
+  video) care. It advertises HL7 and FHIR based EMR integration with Epic and Cerner,
+  SSO for patient login, and an SDK for building a fully branded patient experience,
+  but that integration surface is delivered under a licensing agreement, so no developer
+  portal, API reference or machine-readable specification is published publicly.'
+image: https://staging-marketing-uploads-gravitate-98point6-com.s3.us-west-2.amazonaws.com/uploads/2023/05/31164354/cropped-Brand_icon_transparent_bg-192x192.png
 url: https://raw.githubusercontent.com/api-evangelist/98point6/refs/heads/main/apis.yml
 x-type: company
 x-source: harvest:secondary-market
@@ -12,6 +22,14 @@ created: '2026-08-06'
 modified: '2026-08-06'
 tags:
 - Company
+- Health Care
+- Telehealth
+- Virtual Care
+- Digital Health
+- Electronic Health Records
+- Clinical Decision Support
+- Artificial Intelligence
+- Software
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -19,5 +37,60 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/98point6-domain-security.yml
 - type: Website
+  url: https://www.98point6.com/
+- type: Blog
+  url: https://www.98point6.com/blogs/
+- type: Support
+  url: https://help.98point6.com/
+- type: GitHubOrganization
+  url: https://github.com/98point6
+- type: TermsOfService
+  url: https://www.98point6.com/legal-and-privacy/#licenseagreement
+- type: PrivacyPolicy
+  url: https://www.98point6.com/legal-and-privacy/#privacypolicy
+- type: Security
+  url: https://www.98point6.com/responsible-disclosure-policy/
+- type: SecurityTxt
+  url: well-known/98point6-security.txt
+- type: WellKnown
+  url: well-known/98point6-well-known.yml
+- type: VulnerabilityDisclosure
+  url: security/98point6-vulnerability-disclosure.yml
+- type: LLMsTxt
+  url: llms/98point6-llms.txt
+- type: Conformance
+  url: conformance/98point6-conformance.yml
+x-secondary-market:
   url: https://forgeglobal.com/98point6_stock/
+x-enrichment:
+  date: '2026-08-06'
+  status: minimal
+  artifacts_added: 6
+  pass: local-v1
+x-coverage:
+  state: gated
+  reason: sales-gate
+  detail: >-
+    98point6 licenses its virtual care platform — including the HL7/FHIR EMR
+    integration and the branded-patient-experience SDK its own platform page
+    advertises — only under a commercial agreement, so the entire public web
+    presence is a fifteen-page WordPress marketing site whose only route to the
+    integration surface is the "schedule a demo" form; developer.98point6.com,
+    docs.98point6.com and api.98point6.com do not resolve in DNS at all.
+  evidence:
+  - url: https://www.98point6.com/platform/
+    status: 200
+  - url: https://www.98point6.com/campaign/schedule-demo/
+    status: 200
+  - url: https://www.98point6.com/developers/
+    status: 404
+  - url: https://www.98point6.com/.well-known/api-catalog
+    status: 404
+  - url: https://www.98point6.com/openapi.json
+    status: 404
+  - url: https://github.com/98point6
+    status: 200
+  checked: '2026-08-06'
