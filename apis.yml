@@ -11,6 +11,17 @@ description: '98point6 Technologies is a Seattle-based digital health software c
   SSO for patient login, and an SDK for building a fully branded patient experience,
   but that integration surface is delivered under a licensing agreement, so no developer
   portal, API reference or machine-readable specification is published publicly.'
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 image: https://staging-marketing-uploads-gravitate-98point6-com.s3.us-west-2.amazonaws.com/uploads/2023/05/31164354/cropped-Brand_icon_transparent_bg-192x192.png
 url: https://raw.githubusercontent.com/api-evangelist/98point6/refs/heads/main/apis.yml
 x-type: company
