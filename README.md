@@ -80,8 +80,8 @@ Each property below is a page on APIs.io carrying the machine-readable artifact 
 
 Authentication, trust centre, and vulnerability disclosure.
 
-- [98Point6 Domain Security](https://apis.io/security/98point6/98point6-domain-security/)
-- [98Point6 Vulnerability Disclosure](https://apis.io/security/98point6/98point6-vulnerability-disclosure/)
+- [98point6 Technologies Domain Security](https://apis.io/security/98point6/98point6-domain-security/)
+- [98point6 Technologies Vulnerability Disclosure](https://apis.io/security/98point6/98point6-vulnerability-disclosure/)
 
 ## Where to find this API
 
@@ -97,16 +97,16 @@ Links to the company's own pages. This repository publishes no copy of their spe
 
 ## API Evangelist rating
 
-**Kin Score 16.7** — emerging · rubric 0.24.0 · scored 2026-10-17
+**Kin Score 18.6** — emerging · rubric 0.28.1 · scored 2026-11-21
 
 | Facet | Score |
 |---|---|
 | Discoverability | 55.4 |
 | Contract quality | 0.0 |
 | Contract governance | 18.2 |
-| Operational transparency | 13.2 |
+| Operational transparency | 14.3 |
 | Developer ergonomics | 7.1 |
-| Access clarity | 21.1 |
+| Access clarity | 29.8 |
 
 **Agent readiness 0.0** — human-only
 
@@ -131,6 +131,12 @@ Links to the company's own pages. This repository publishes no copy of their spe
 | Protected Resource Metadata | — |
 | Dynamic Client Registration | — |
 | Agentic Commerce | — |
+| Pagination Ratio | na |
+| Operation Distinctiveness | na |
+| MCP Tool Quality | na |
+| Onboarding Descriptor | — |
+| Dns Aid Index | na |
+| Markdown Negotiation | na |
 
 **Regulatory alignment 22.8** — Health
 
